@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./app.js"></script>
+    <title>Cards Match</title>
+  </head>
+  <body>
+    <h1>Match cards</h1>
+    <h2>Choose difficulty</h2>
+    <div>
+      <input type="radio" id="easyMode" name="difficulty" value="easy" />
+      <label for="easyMode">Easy</label>
+      <input
+        type="radio"
+        id="normalMode"
+        name="difficulty"
+        value="normal"
+        checked="checked"
+      />
+      <label for="normalMode">Normal</label>
+      <input type="radio" id="hardMode" name="difficulty" value="hard" />
+      <label for="hardMode">Hard</label>
+    </div>
+
+    <div id="timer">Timer:</div>
+    <div class="board"></div>
+    <div>
+      <button id="start">start</button>
+      <button id="reset">Reset Game</button>
+    </div>
+  </body>
+</html>
